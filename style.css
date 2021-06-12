@@ -14,18 +14,19 @@ body{
     width: 100vw;
     height: 100%;
     margin-top: 5vw;
+    font-family: 'Pacifico', serif;
+    font-size: 1.5rem;
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
-    height: 15rem;
+    width: 100%;
     color: #000;
-    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 5vw;
+    flex-direction: row;
 }
 
 .timer{
@@ -33,22 +34,15 @@ body{
     justify-content: center;
     align-items: center;
     color: #00414f;
-    width: 100%;
-    height: 100%;
+    width: 10rem;
+    height: 10rem;
     border: 5px solid #00414f;
     border-radius: 50%;
+    margin: 2vw;
 }
 
-input[type=text]{
-    width: 2vw;
-    height: 2vw;
-    font-size: 1.5rem;
-    background-color: #00414f;
-    border-radius: 50%;
-    text-align: center;
-    outline: none;
-    border: none;
-    color: #fff;
+.cicles{
+    flex-direction: column;
 }
 
 .btn{
@@ -59,8 +53,27 @@ input[type=text]{
     background-color: transparent;
     color: #00414f;
     border: none;
-    height: 2rem;
-    width: 2rem;
+    height: 4vw;
+    width: 4vw;
+    font-size: 1.5rem;
     margin: 1vw;
     margin-top: 2vw;
+}
+
+.btn:hover{
+    height: 4vw;
+    width: 4vw;
+    border: 3px solid #00414f;
+    border-radius: 50%;
+}
+
+.btn-buttons{
+    display: flex;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }

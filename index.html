@@ -6,18 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6881743ee1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"rel="stylesheet"/>
+
     <title>Pomodoro</title>
 </head>
-<body onload="pomoCount()">
+<body>
     <h1>Pomodoro App</h1>
     <div class="container">
         <div class="timer">
-            <div class="minutes"><input type="text" maxlength="2"></div>
-            <h1>:</h1>
-            <div class="seconds"><input type="text" maxlength="2"></div>
+            <div class="minutes" id="Wminutes">25</div>
+            :
+            <div class="seconds" id="Wseconds">00</div>
         </div>
-        <button class="btn" onclick="start_pomo()"><i class="fas fa-play"></i></button>
-        <button class="btn" onclick="pause_pomo()"><i class="fas fa-redo"></i></button>
+   
+        <div class="timer cicles">
+            Cilcos:
+            <div id="counter">0</div>
+        </div>
+    
+        <div class="timer">
+            <div class="minutes" id="Bminutes">5</div>
+            :
+            <div class="seconds" id="Bseconds">00</div>
+        </div>
+        
+    </div>
+    <div class="btn-buttons">
+    <button class="btn" id="startBtn"><i class="fas fa-play"></i></button>
+    <button class="btn" id="stopBtn"><i class="fas fa-stop"></i></button>
+    <button class="btn" id="resetBtn"><i class="fas fa-redo"></i></button>
     </div>
     <script src="app.js"></script>
 </body>
